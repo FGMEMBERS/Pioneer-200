@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <aircraft-version>0.2</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <flaps>
+      <setting>0.00</setting>
+      <setting>0.25</setting>
+      <setting>0.75</setting>
+      <setting>1.00</setting>
+    </flaps>
+
+    <startup>
+      <splash-texture>Aircraft/Pioneer-200/pioneer200-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/Pioneer-200/Sounds/pioneer200-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/Pioneer-200/Models/pioneer200.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <panel>
+      <visibility archive="y">false</visibility>
+    </panel>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int" n="0">0</int>
+        <int type="int" n="1">0</int>
+        <int type="int" n="2">0</int>
+        <int type="int" n="3">0</int>
+        <int type="int" n="4">0</int>
+        <int type="int" n="5">0</int>
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>pioneer200</title>
+      <line>______________________________________________</line>
+    </help>
+
+  </sim>
+ 
+  <input>
+    <keyboard include="Nasal/pioneer200-keyboard.xml"/>
+  </input>
+ 
+  <controls>
+    <gear>
+      <brake-parking type="double">1</brake-parking>
+    </gear>
+  </controls>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/Pioneer-200/Nasal/doors.nas</file>
+    </doors>
+    <pioneer200>
+      <file>Aircraft/Pioneer-200/Nasal/pioneer200.nas</file>
+      <file>Aircraft/Pioneer-200/Nasal/liveries.nas</file>
+      <file>Aircraft/Pioneer-200/Nasal/light.nas</file>
+    </pioneer200>
+  </nasal>
+  
+</PropertyList>

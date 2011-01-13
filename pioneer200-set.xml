@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="pioneer200-jsbsim-cnf.xml"> -->
+<PropertyList include="pioneer200-yasim-cnf.xml">
+
+  <sim>
+
+    <description>Pioneer 200 (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+
+  </sim>
+
+</PropertyList>
